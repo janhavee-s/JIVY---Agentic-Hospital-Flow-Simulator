@@ -80,7 +80,7 @@ LLM Reasoning (post-hoc explanation)
 
 ◉ Prerequisites:
 Python 3.10+
-Ollama (optional, for AI explanations)
+Ollama (for AI explanations)
 Note: The simulation works without Ollama. Only LLM-based explanations require it.
 
 
@@ -101,12 +101,13 @@ pip install -r requirements.txt
 Step 2: (Optional) Enable AI reasoning
 AI explanations use Ollama.
 
-Pull the model:
+ollama serve (keep this running)
+
+Pull the model: (on different terminal)
 ollama pull mistral
 Ensure Ollama is running on: http://localhost:11434
 
-
-Step 3: Run the backend
+Step 3: Run the backend 
 From the project root:
 
 python run_simulation.py
@@ -131,4 +132,4 @@ Analysis Chain: Performs causal reasoning over simulation results.
 Explanation Chain: Produces human-readable explanations for clinicians or operators.
 
 License
-Use as needed for the nexus_Jivy project.
+Use as needed for the JIVY project.
